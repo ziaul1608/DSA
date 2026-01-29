@@ -24,6 +24,7 @@ public class mergeSort {
         while(i < n1) arr[k++] = left[i++];
         while(j < n2) arr[k++] = right[j++];
     }
+
     static void mergeSort(int[] arr, int l, int r) {
         if(l >= r) return;
         int mid = (l + r) / 2;

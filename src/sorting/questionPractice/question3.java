@@ -5,6 +5,9 @@ public class question3 {
         int n = arr.length;
         int x = -1, y = -1;
 
+        //edge cases
+        if(n <= 1) return;
+
         //process all adjacent elements
         for (int i = 1; i < n; i++) {
             if(arr[i-1] > arr[i]) {
