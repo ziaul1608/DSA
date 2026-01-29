@@ -1,26 +1,22 @@
-package sorting;
+package sorting.questionPractice;
 
-public class countSort {
+public class question5 {
     static int findMax(int[] arr) {
-        int n = arr.length;
         int max = arr[0];
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i < arr.length; i++) {
             if(arr[i] > max) max = arr[i];
         }
         return max;
     }
-    static void sorting(int[] arr) {
-        int n = arr.length;
+    static void sorted(int[] arr) {
         int max = findMax(arr);
         int[] count = new int[max+1];
 
-        //counting the number of repetitions of a number and storing it in count array
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arr.length; i++) {
             count[arr[i]]++;
         }
 
         int k = 0;
-        //sorting numbers in main array with help of count array;
         for (int i = 0; i < count.length; i++) {
             for (int j = 0; j < count[i]; j++) {
                 arr[k++] = i;
@@ -28,10 +24,9 @@ public class countSort {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {1, 4, 5, 2, 2, 5};
-        int n = arr.length;
-        sorting(arr);
-        for (int i = 0; i < n; i++) {
+        int[] arr = {0, 2, 1, 2, 0, 0};
+        sorted(arr);
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
     }
