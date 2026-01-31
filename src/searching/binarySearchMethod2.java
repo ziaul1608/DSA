@@ -2,7 +2,7 @@ package searching;
 
 public class binarySearchMethod2 {
     static boolean searching(int[] arr, int st, int end, int target) {
-        if(st <= end) return false; //base case
+        if(st > end) return false; //base case
 
         int mid = (st + end) / 2;
         if(target == arr[mid]) {
