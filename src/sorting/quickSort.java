@@ -44,6 +44,8 @@ public class quickSort {
         int[] arr = {6, 3, 1, 2, 5};
         int n = arr.length;
         quickSorting(arr, 0, n-1);
+
+        //printing sorted array
         for(int i = 0; i<n; i++) {
             System.out.print(arr[i] + " ");
         }
