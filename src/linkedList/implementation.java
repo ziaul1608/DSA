@@ -122,21 +122,27 @@ public class implementation {
         ll.insertAtEnd(7);
         ll.display();
         System.out.println();
-////        System.out.println("size of linked list: " + ll.size());
+
+//        System.out.println("size of linked list: " + ll.size());
 //        ll.insertAtEnd(9);
 //        ll.display();
 //        System.out.println();
+
 //        ll.insertAtHead(5);
 //        ll.display();
 //        System.out.println();
+
 //        ll.insertAt(6, 10);
 //        ll.display();
 //        System.out.println();
+
 //        ll.insertAt(0, 14);
 //        ll.display();
 //        System.out.println();
+
 //        System.out.println(ll.getElementAt(1));
 //        System.out.println("size of linked list: " + ll.size);
+
         ll.deleteAt(0);
         ll.display();
     }
